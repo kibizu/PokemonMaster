@@ -7,19 +7,22 @@ public class Pokemon {
     private String mName;
     private String mId;
     private String mCandy;
+    private String mType;
     private Bitmap mImage;
 
-    public Pokemon(String mName, String mId, String mCandy) {
-        this.mName = mName;
-        this.mId = mId;
-        this.mCandy = mCandy;
+    public Pokemon(String name, String id, String candy, String type) {
+        this.mName = name;
+        this.mId = id;
+        this.mCandy = candy;
+        this.mType = type;
     }
 
-    public Pokemon(String mName, String mId, String mCandy, Bitmap mImage) {
-        this.mName = mName;
-        this.mId = mId;
-        this.mCandy = mCandy;
-        this.mImage = mImage;
+    public Pokemon(String name, String id, String candy, String type, Bitmap image) {
+        this.mName = name;
+        this.mId = id;
+        this.mCandy = candy;
+        this.mType = type;
+        this.mImage = image;
     }
 
     public String getmName() {
@@ -33,6 +36,8 @@ public class Pokemon {
     public String getmCandy() {
         return mCandy;
     }
+
+    public String getmType() { return mType; }
 
     public Bitmap getmImage() {
         return mImage;

@@ -4,4 +4,18 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="cardviewColor">#f6f7ff</color>
+    <!-- The types colors of the pokemon-->
+    <color name="grass">#27c700</color>
+    <color name="fire">#ff0004</color>
+    <color name="water">#2fd2ff</color>
+    <color name="bug">#ffb94f</color>
+    <color name="poison">#bf00ff</color>
+    <color name="electric">#fbff00</color>
+    <color name="ground">#ce8c00</color>
+    <color name="fighting">#c70007</color>
+    <color name="psychic">#b2d7e2</color>
+    <color name="rock">#878787</color>
+    <color name="ghost">#beb1ce</color>
+    <color name="ice">#84ffd8</color>
+    <color name="dragon">#ff8400</color>
 </resources>

@@ -22,7 +22,7 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:text="Il nome"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/type_rectangle"
             android:paddingLeft="10dp"/>
 
         <TextView

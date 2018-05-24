@@ -147,6 +147,12 @@ public class MainActivity extends AppCompatActivity {
                     // looping through all Contacts
                     for (int i = 0; i < pokemons.length(); i++) {
 
+                        JSONArray types = pokemons.getJSONObject(i).getJSONArray("type");
+
+
+                        String type = types.getString(0);
+
+
                         Pokemon pokemon;
                         // tmp hash map for a single pokemon
 
@@ -161,10 +167,10 @@ public class MainActivity extends AppCompatActivity {
 
                         if (image==null) {
 
-                            pokemon = new Pokemon(pokemons.getJSONObject(i).getString("name"), "N° " + pokemons.getJSONObject(i).getString("id"), pokemons.getJSONObject(i).getString("candy"));
+                            pokemon = new Pokemon(pokemons.getJSONObject(i).getString("name"), "N° " + pokemons.getJSONObject(i).getString("id"), pokemons.getJSONObject(i).getString("candy"), type);
                         }else{
 
-                            pokemon = new Pokemon(pokemons.getJSONObject(i).getString("name"), "N° " + pokemons.getJSONObject(i).getString("id"), pokemons.getJSONObject(i).getString("candy"), image);
+                            pokemon = new Pokemon(pokemons.getJSONObject(i).getString("name"), "N° " + pokemons.getJSONObject(i).getString("id"), pokemons.getJSONObject(i).getString("candy"), type, image);
                         }
 
 
